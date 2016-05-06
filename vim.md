@@ -22,6 +22,11 @@ w
 e
 ```
 
+###### Previous word
+```
+b
+```
+
 ###### Beginning of line
 ```
 ^
@@ -52,4 +57,29 @@ i
 ###### Delete everything until the end of this line
 ```
 D
+```
+
+###### Append from this point
+```
+a
+```
+
+###### Copy (yank) a line
+```
+yy
+```
+
+###### Paste a yanked line
+```
+p
+```
+
+###### Paste a yanked line 10 times
+```
+10p
+```
+
+###### Delete an entire word
+```
+dw
 ```

@@ -17,6 +17,36 @@ ls -l
 ls -latr
 ```
 
+###### Change directory
+```
+cd <dirname>
+```
+###### Move back to previous directory
+```
+cd -
+```
+
+###### Copy file1 to file2
+```
+cp file1 file2
+```
+
+###### Create a symbolic link to a file
+Symbolic links can point to a file on any volume
+```
+ln -s file link
+```
+
+###### Create a directory
+```
+mkdir dir1
+```
+
+###### Create a directory and its intermediate directories if they don't exist
+```
+mkdir /dir1/dir2/dir3
+```
+
 #### Process Management
 
 ###### List all running processes
@@ -47,4 +77,11 @@ fg %2
 ###### Move last stopped/background job back to the foreground
 ```
 fg
+```
+
+#### Miscellaneous
+
+###### Check which shell I'm running
+```
+echo $SHELL
 ```

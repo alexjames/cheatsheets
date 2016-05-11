@@ -2,17 +2,17 @@
 
 #### Filesystem
 
-###### list files
+###### List files
 ```
 ls 
 ```
 
-###### list files with details
+###### List files with details
 ```
 ls -l
 ```
 
-###### list files in reverse order sorted by modification time
+###### List files in reverse order sorted by modification time
 ```
 ls -latr
 ```
@@ -44,7 +44,17 @@ mkdir dir1
 
 ###### Create a directory and its intermediate directories if they don't exist
 ```
-mkdir /dir1/dir2/dir3
+mkdir -p /dir1/dir2/dir3
+```
+
+###### Show size of current directory
+```
+du -sh
+```
+
+###### Show size of current directory and all its sub-directories
+```
+du -sh *
 ```
 
 #### Process Management

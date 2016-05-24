@@ -37,6 +37,16 @@ b
 $
 ```
 
+###### Search
+```
+/<string>
+```
+
+###### Search from current cursor position
+```
+./<string>
+```
+
 #### Editing
 
 ###### Insert mode
@@ -82,4 +92,14 @@ p
 ###### Delete an entire word
 ```
 dw
+```
+
+###### Search and replace
+```
+:%s/<find>/<replace>/gc
+```
+
+###### Search and replace from cursor downwards
+```
+:.,$s/<find>/<replace>/gc
 ```

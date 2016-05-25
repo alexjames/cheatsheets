@@ -91,6 +91,11 @@ fg
 
 #### Miscellaneous
 
+###### Clear terminal screen
+```
+clear OR [Crtl + l]
+```
+
 ###### Check which shell I'm running
 ```
 echo $SHELL

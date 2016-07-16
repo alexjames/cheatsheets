@@ -20,3 +20,11 @@ cscope -R
 ```
 CTRL + D
 ```
+
+### vim integration
+Copy the cscope_maps.vim file in your vimrc/gvimrc file. [http://cscope.sourceforge.net/cscope_vim_tutorial.html]
+
+###### Keyword search
+```
+[CTRL + \] s
+```

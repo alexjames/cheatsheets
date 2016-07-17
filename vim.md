@@ -47,6 +47,19 @@ $
 ./<string>
 ```
 
+###### Split window
+Horizontal split
+```
+:split
+```
+Vertical split
+```
+:vsplit
+```
+Move between panes
+```
+[Ctrl + w] + <arrow key>
+```
 #### Editing
 
 ###### Insert mode

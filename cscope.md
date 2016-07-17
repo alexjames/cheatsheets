@@ -28,3 +28,9 @@ Copy the cscope_maps.vim file in your vimrc/gvimrc file. [http://cscope.sourcefo
 ```
 [CTRL + \] s
 ```
+
+
+###### Return to original position before search
+```
+[CTRL + t]
+```

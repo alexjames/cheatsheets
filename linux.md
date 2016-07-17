@@ -91,6 +91,11 @@ fg
 
 #### Miscellaneous
 
+###### for loop
+```
+for f in $(ls dir/); do echo $f; done
+```
+
 ###### Clear terminal screen
 ```
 clear OR [Crtl + l]

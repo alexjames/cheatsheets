@@ -105,3 +105,8 @@ clear OR [Crtl + l]
 ```
 echo $SHELL
 ```
+
+###### Check the exit status of the last run program
+```
+echo $?
+```

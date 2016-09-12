@@ -110,3 +110,8 @@ echo $SHELL
 ```
 echo $?
 ```
+
+###### Check installed services
+```
+chkconfig --list
+```

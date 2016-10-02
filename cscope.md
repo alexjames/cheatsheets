@@ -36,3 +36,8 @@ Copy the cscope_maps.vim file in your vimrc/gvimrc file. [http://cscope.sourcefo
 ```
 [CTRL + t]
 ```
+
+###### Search for a file
+```
+:cs f f <filename>
+```

@@ -115,3 +115,8 @@ echo $?
 ```
 chkconfig --list
 ```
+
+###### Search and replace a phrase in files
+```
+sed -i 's/pharase/replacement/g' *
+```

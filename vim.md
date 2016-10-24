@@ -60,6 +60,17 @@ Move between panes
 ```
 [Ctrl + w] + <arrow key>
 ```
+
+###### Set mark (a) at this position
+```
+ma
+```
+
+###### jump to mark a
+```
+`a
+```
+
 #### Editing
 
 ###### Insert mode

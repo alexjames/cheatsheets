@@ -120,3 +120,12 @@ chkconfig --list
 ```
 sed -i 's/pharase/replacement/g' *
 ```
+
+###### Create ISO Image
+```
+genisoimage -o myimage.iso -V MyLabel -R -J /home/source/folder
+```
+###### Mount ISO
+```
+mount -o loop /home/myimage.iso /mnt/cdrom
+```

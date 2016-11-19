@@ -100,7 +100,14 @@ for f in $(ls dir/); do echo $f; done
 ```
 clear OR [Crtl + l]
 ```
-
+###### New terminal screen
+```
+[Crtl + Alt + T]
+```
+###### Switch terminal tabs
+```
+[Crtl + PgUp/PgDn]
+```
 ###### Check which shell I'm running
 ```
 echo $SHELL

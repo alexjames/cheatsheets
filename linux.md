@@ -136,3 +136,8 @@ genisoimage -o myimage.iso -V MyLabel -R -J /home/source/folder
 ```
 mount -o loop /home/myimage.iso /mnt/cdrom
 ```
+###### Print 2 lines before and 3 lines after search match in grep
+Alternately, you can use -C to match <n> lines both before and after.
+```
+cat file | grep -B 2 -A 3 "pattern"
+```

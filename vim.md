@@ -127,3 +127,10 @@ dw
 ```
 :.,$s/<find>/<replace>/gc
 ```
+
+###### Cycle through multiple files
+```
+vim *.txt
+:n (next file)
+:N (previous file)
+```

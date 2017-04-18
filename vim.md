@@ -134,3 +134,8 @@ vim *.txt
 :n (next file)
 :N (previous file)
 ```
+###### Highlight column for more than 80 characters
+```
+:set textwidth=80
+:set colorcolumn=+1
+```

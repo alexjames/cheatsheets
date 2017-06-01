@@ -139,3 +139,11 @@ vim *.txt
 :set textwidth=80
 :set colorcolumn=+1
 ```
+###### Traverse filesystem
+```
+:e .
+```
+###### Move between open files
+```
+:bn
+```

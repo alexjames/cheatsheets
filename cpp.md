@@ -28,3 +28,18 @@ std::string num = std::to_string(23);
 int x = 5, y = 39;
 min_val = std::min(x, y);
 ```
+
+### Vector arrays
+Initialize a vector array of size num with all values set to 0.
+```
+vector<int> v(num, 0);
+```
+
+
+### 2D vector arrays
+Notice the space after `>`. Used to get it to compile correctly.
+```
+X = Y = 4;
+vector<vector<int> > V(X, vector<int>(Y, 0));
+V[2][3] = 6;
+```

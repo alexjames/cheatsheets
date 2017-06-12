@@ -149,5 +149,5 @@ vim *.txt
 ```
 ###### Copy to System clipboard
 ```
-[Shift]"yy (while holding shift) [in insert mode]
+[Shift]["][+]yy (while holding shift) [in insert mode]
 ```

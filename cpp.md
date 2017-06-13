@@ -62,3 +62,9 @@ if (hm.find('c') == hm.end())
 else
     cout << "found";
 ````
+
+### Uppercase/Lowercase
+```
+std::toupper('c');
+std::tolower('X');
+```

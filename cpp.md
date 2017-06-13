@@ -43,3 +43,22 @@ X = Y = 4;
 vector<vector<int> > V(X, vector<int>(Y, 0));
 V[2][3] = 6;
 ```
+
+### Hashmaps
+```
+unordered_map<char, int> hm;
+hm.insert({'c', 5});
+if (hm.find('c') == hm.end())
+    cout << "not found";
+else
+    cout << "found";
+
+hm.erase('c');
+
+hm['c'] = 5;
+
+if (hm.find('c') == hm.end())
+    cout << "not found";
+else
+    cout << "found";
+````

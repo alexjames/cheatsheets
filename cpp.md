@@ -20,6 +20,10 @@ Convert a number to a string
 ```
 std::string num = std::to_string(23);
 ```
+String reverse
+```
+std::reverse(str.begin(), str.end());
+```
 
 ### Min/Max
 ```

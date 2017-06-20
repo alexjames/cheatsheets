@@ -71,4 +71,7 @@ else
 ```
 std::toupper('c');
 std::tolower('X');
+
+std::isupper('C')
+std::islower('C')
 ```

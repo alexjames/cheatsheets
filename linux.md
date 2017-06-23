@@ -141,3 +141,7 @@ Alternately, you can use -C to match <n> lines both before and after.
 ```
 cat file | grep -B 2 -A 3 "pattern"
 ```
+###### Recursively change all occurences of a string in multiple files
+```
+grep -r -l "get-dc-abbr" * | xargs sed -i 's/get-dc-abbr/my-site/g'
+```

@@ -33,6 +33,12 @@ int x = 5, y = 39;
 min_val = std::min(x, y);
 ```
 
+### Square Root
+```
+#include<cmath>
+sqrt(X);
+```
+
 ### Vector arrays
 Initialize a vector array of size num with all values set to 0.
 ```

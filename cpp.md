@@ -81,3 +81,11 @@ std::tolower('X');
 std::isupper('C')
 std::islower('C')
 ```
+
+### Traverse a hashmap
+```
+for (auto &kv : hm)
+{
+    cout << "key : " << kv.first << " value : " << kv.second;
+}
+```

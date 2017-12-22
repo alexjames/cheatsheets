@@ -31,6 +31,7 @@ std::reverse(str.begin(), str.end());
 ...
 int x = 5, y = 39;
 min_val = std::min(x, y);
+max_val = std::max(x, y);
 ```
 
 ### Square Root
@@ -87,5 +88,25 @@ std::islower('C')
 for (auto &kv : hm)
 {
     cout << "key : " << kv.first << " value : " << kv.second;
+}
+```
+
+### Token parse loop
+```
+str == "ab,cd,gdf,we,d,s,d";
+
+while (true)
+{
+   auto pos = str.find(",");
+   token = str.substr(0, pos);
+   // sub-string upto but not including the position found.
+   // if pos == npos, the whole string is returned
+   
+   if (pos == string::npos)
+   {
+     str = "";
+     break;
+   }
+   str = str.substr(pos + 1);
 }
 ```

@@ -145,3 +145,7 @@ cat file | grep -B 2 -A 3 "pattern"
 ```
 grep -r -l "get-dc-abbr" * | xargs sed -i 's/get-dc-abbr/my-site/g'
 ```
+###### ffmpeg extract mp4 container audio without conversion
+```
+ffmpeg -i video.mp4 -vn -acodec copy audio.aac
+```

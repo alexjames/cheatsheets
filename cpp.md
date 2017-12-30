@@ -110,3 +110,12 @@ while (true)
    str = str.substr(pos + 1);
 }
 ```
+
+### Queue of co-ordinates
+```
+queue<pair<int, int>> q;
+...
+q.push(make_pair(x, y)); // type-conversion is implicit
+...
+cout << q.front().first << " " << q.front().second;
+```

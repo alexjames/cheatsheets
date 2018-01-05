@@ -119,3 +119,21 @@ q.push(make_pair(x, y)); // type-conversion is implicit
 ...
 cout << q.front().first << " " << q.front().second;
 ```
+
+### Heap
+```
+priority_queue<int> max-heap;   // max-heap
+q.push(4);
+q.pop();
+
+priority_queue<int, vector<int>, greater<int>> min-heap;
+```
+
+### n-tuples
+```
+tuple<int, int, string> t;
+get<0>(t) = 5;
+get<2>(t) = "lol";
+...
+tuple<int, int, int> m = make_tuple(1,2,3);
+```

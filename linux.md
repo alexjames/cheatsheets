@@ -149,3 +149,7 @@ grep -r -l "get-dc-abbr" * | xargs sed -i 's/get-dc-abbr/my-site/g'
 ```
 ffmpeg -i video.mp4 -vn -acodec copy audio.aac
 ```
+###### ffmpeg extract mp4 container audio with trimming
+```
+ffmpeg -i video.mp4 -ss 00:01:02.500 -t 00:01:03.250 -vn -acodec copy audio.aac
+```

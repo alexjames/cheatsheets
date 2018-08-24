@@ -28,3 +28,19 @@ for (char ch : str.toCharArray()) {
 return result.toString();
 
 ```
+
+### Sorting
+```
+// Sort integers
+int[] arr = {6, 3, 7, 8, 2};
+Arrays.sort(arr);
+```
+### Math
+Use Math library for int, float, double and long.
+```
+Math.min(1, 3);
+Math.max(2, 6);
+Math.sqrt(20);
+Math.abs(-1);
+Math.pow(2, 4);
+```

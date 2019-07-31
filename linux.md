@@ -17,6 +17,11 @@ ls -l
 ls -latr
 ```
 
+###### List directories in order of size
+```
+du -a | sort -n -r
+```
+
 ###### Change directory
 ```
 cd <dirname>

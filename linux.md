@@ -101,6 +101,20 @@ fg
 for f in $(ls dir/); do echo $f; done
 ```
 
+###### New Hard Disk
+```
+fdisk -l
+mkfs.ext4 /dev/sdb
+mkdir /partition
+mount /dev/sdb /partition
+
+vi /etc/fstab
+<add line>
+/dev/sdb               /partition           ext4    defaults        1 2
+
+```
+
+
 ###### Clear terminal screen
 ```
 clear OR [Crtl + l]

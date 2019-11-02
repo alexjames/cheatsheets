@@ -64,3 +64,5 @@ Older C programs used NULL or 0 to denote null-pointers. However, 0 and NULL can
 ```
 int *p = nullptr;
 ```
+
+Classes for when you want to hide implementation details. Structs for when you want users to be able to access individual data members. Structs are good as simple data structures for data sharing.

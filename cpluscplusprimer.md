@@ -52,13 +52,30 @@ for (auto& x : v)
 
 // References cannot be changed once initialized (const by design) and don't need to be dereferenced with '*'.
 ```
+
+### references
 References are useful in as function arguments, because they ensure that copies of the arguments are not made and the object that is passed to the function is actually modified.
 ```
 void modifies_v(vector<int> &v);  // modifies argument
 void modifies_v(vector<int> v);   // makes a copy of v and modifies this copy
 void cannot_modify_v(const vector<int> &v);   // passed by reference and function cannot modify it, saves cost of copying
 ```
-Compilers will not allocate any memory for references and will substitue the address of the object being referred to at compile time. This is why arrays of references or reference of references do not make sense. 
+Compilers will not allocate any memory for references and will substitute the address of the object being referred to at compile time (depends on the compiler but good mental model). This is why arrays of references or reference of references do not make sense. 
+
+```
+// BAD: the returned pointer cannot be used at the string s is destroyed on function exit
+const char *return_string() {
+    std::string s = "this is a string";
+    return s.c_str();
+}
+
+// BAD: the returned reference (since it's a address), since it is just an address, cannot be used either
+std::string& return_string() {
+    std::string s = "this is a string";
+    return s;
+}
+```
+A function should never return an address or reference to a local variable. It can return the address/references to non-local variables though.
 
 ### nullptr
 Older C programs used NULL or 0 to denote null-pointers. However, 0 and NULL can be interpretted as integers in expressions, so having an explicit `nullptr` keyword to denote an unassigned pointer makes sense.

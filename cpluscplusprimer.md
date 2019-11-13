@@ -84,3 +84,6 @@ int *p = nullptr;
 ```
 
 Classes for when you want to hide implementation details. Structs for when you want users to be able to access individual data members. Structs are good as simple data structures for data sharing.
+
+Objects created with `new` are allocated on the heap and will continue to exist until you call `delete` on them. Same for `malloc` and `free`.
+

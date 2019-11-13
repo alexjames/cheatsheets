@@ -58,6 +58,7 @@ void modifies_v(vector<int> &v);  // modifies argument
 void modifies_v(vector<int> v);   // makes a copy of v and modifies this copy
 void cannot_modify_v(const vector<int> &v);   // passed by reference and function cannot modify it, saves cost of copying
 ```
+Compilers will not allocate any memory for references and will substitue the address of the object being referred to at compile time. This is why arrays of references or reference of references do not make sense. 
 
 ### nullptr
 Older C programs used NULL or 0 to denote null-pointers. However, 0 and NULL can be interpretted as integers in expressions, so having an explicit `nullptr` keyword to denote an unassigned pointer makes sense.

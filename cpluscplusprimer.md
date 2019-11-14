@@ -87,3 +87,12 @@ Classes for when you want to hide implementation details. Structs for when you w
 
 Objects created with `new` are allocated on the heap and will continue to exist until you call `delete` on them. Same for `malloc` and `free`.
 
+### std::string
+```
+std::string return_empty_string() {
+    return "";    // inefficient, bad
+    return {};    // good
+    return std::string;    // good
+}
+```
+

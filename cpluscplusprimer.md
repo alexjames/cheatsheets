@@ -38,6 +38,16 @@ constexpr int mul(int x, int y) {return x + y;}
 constexpr int minutes = mul(24, 60);
 ```
 
+Using `static` with a new declaration causes the memory to only be allocated on the first call, and the pointer reffered to on every other invocation.
+```
+  static void registerFactory(Base& factory) {
+    auto result = factories().emplace(std::make_pair(factory.name(), &factory));
+    if (!result.second) {
+      throw EnvoyException(fmt::format("Double registration for name: '{}'", factory.name()));
+    }
+  }
+```
+
 ### range loops
 ```
 int v[] = {1, 2, 3};

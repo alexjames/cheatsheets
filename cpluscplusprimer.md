@@ -25,8 +25,28 @@ auto y = fn(4);
 // Don't use auto if it can cause ambiguity while reading the code. 
 ```
 
+`static` intialization at the namespace level makes an object only visible within that translation unit, with a lifetime of the entire program. Inside of a function, it is only visible within the function, acessible across multiple invocation. Inside of a class, it is accessible directly from the class as well as instances of a class. Within a template, a separate copy is created for every type of initialized template.
+```
+template <class T> class Example
+{
+public:
+    static int count;
+    Example()
+    {
+        count++;
+    }
+};
+
+Example <int> x;
+Example <char> y;
+Example <int> z;
+
+cout << Example<int>::count; // outputs 2
+cout << Example<char>::count; // outputs 1
+```
+
 ## Scope and lifetimes
-There is local (block) scope, class scope and namespace scope. Objects created in a namespace have a lifetime equivalent to the life of the program. Objects created by new live on until they are destoryed by delete.
+There is local (block) scope, class scope and namespace scope. Objects created in a namespace have a lifetime equivalent to the life of the program. Objects created by `new` live on until they are destroyed by `delete`.
 
 const - the data is never changed
 constexpr - evaluated at compile time, usually placed in the data-segment ROM

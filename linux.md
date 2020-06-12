@@ -181,3 +181,8 @@ ffmpeg -i video.mp4 -ss 00:01:02.500 -t 00:01:03.250 -vn -acodec copy audio.aac
 ```
 python3 -m json.tool pod-data.json
 ```
+###### Quick HTTP Server
+```
+python -m SimpleHTTPServer 8080
+python3 -m http.server 8080
+```

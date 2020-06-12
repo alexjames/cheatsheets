@@ -69,6 +69,11 @@ du -sh *
 ps -ef
 ```
 
+###### List process running on port 5000
+```
+lsof -i :5000
+```
+
 ###### Suspend current running job
 ```
 CTRL + Z

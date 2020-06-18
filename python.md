@@ -9,7 +9,9 @@ with open("file.txt") as f:
 * Strip trailing and leading whitespace for a string
 ```
 s = "   blah  \t he he "
-s.strip()   # s = "blah  \t he he"
+s.strip()
+
+Result: s = "blah  \t he he"
 ```
 
  * Lists

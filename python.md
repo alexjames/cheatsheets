@@ -26,3 +26,8 @@ if l:
 if not l:
     print("List is empty")
 ```
+ * Sets
+```
+s = {"apple", "orange", "banana"}
+s = set()           # declare an empty set, otherwise interpreter gets confused with dictionary
+```

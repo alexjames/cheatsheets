@@ -31,3 +31,16 @@ if not l:
 s = {"apple", "orange", "banana"}
 s = set()           # declare an empty set, otherwise interpreter gets confused with dictionary
 ```
+
+ * Dictionary
+```
+d = {"key1" : 1, "key2" 2}
+
+for key in d:
+    print(key)
+
+for key, value in d.items():
+    print(key, value)
+
+d.get("key1", 0)   # return key1 or return default value 0
+```

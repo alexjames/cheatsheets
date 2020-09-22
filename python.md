@@ -44,3 +44,10 @@ for key, value in d.items():
 
 d.get("key1", 0)   # return key1 or return default value 0
 ```
+ * JSON
+```
+file = open("/Users/ajames/Downloads/pods.json")           
+f = file.read()
+d = json.loads(f)
+```
+

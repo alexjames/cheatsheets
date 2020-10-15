@@ -1,12 +1,12 @@
 ##### Container management
 Run Jetty webserver
 ```
-docker run jetty
+docker run -p 80:8080 jetty
 ```
 
 Run Jetty as a service
 ```
-docker -d run jetty
+docker run -d -p 80:8080 jetty
 ```
 
 Check what containers are currently running

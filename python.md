@@ -50,4 +50,25 @@ file = open("/Users/ajames/Downloads/pods.json")
 f = file.read()
 d = json.loads(f)
 ```
+* Slices
+```
+indexing starts from 0 to n-1, reverse indexing starts from -n to -1
+# all elements
+a[:]
+
+# first n elements
+a[:n]
+
+# last n elements
+a[-n:]
+
+# elements between index n to m-1
+a[n:m]
+
+# every second element (starting from the first)
+a[::2]
+
+# every second element starting from the second
+a[1::2]
+```
 

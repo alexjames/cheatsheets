@@ -186,3 +186,7 @@ python3 -m json.tool pod-data.json
 python -m SimpleHTTPServer 8080
 python3 -m http.server 8080
 ```
+###### Print OpenSSL Certificate
+```
+openssl x509 -in personal.crt -noout -text 
+```

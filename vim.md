@@ -151,3 +151,17 @@ vim *.txt
 ```
 [Shift]["][+]yy (while holding shift) [in insert mode]
 ```
+###### Show line number and character position
+```
+:set ruler
+```
+###### Insert characters at start of multiple lines
+```
+[Esc]
+[Ctrl + V]
+[select text]
+[Shift + i]
+[type text]
+[Esc]
+```
+

@@ -62,6 +62,11 @@ du -sh
 du -sh *
 ```
 
+###### Sort comma-separated list by second column numerically
+```
+cat fname | sort -t',' -k 2 -n -r
+```
+
 #### Process Management
 
 ###### List all running processes

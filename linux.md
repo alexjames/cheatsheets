@@ -67,6 +67,11 @@ du -sh *
 cat fname | sort -t',' -k 2 -n -r
 ```
 
+###### Find number of times a line repeats in a file
+```
+cat fname | sort | uniq -c
+```
+
 #### Process Management
 
 ###### List all running processes
@@ -121,9 +126,7 @@ mount /dev/sdb /partition
 vi /etc/fstab
 <add line>
 /dev/sdb               /partition           ext4    defaults        1 2
-
 ```
-
 
 ###### Clear terminal screen
 ```
@@ -170,27 +173,33 @@ Alternately, you can use -C to match <n> lines both before and after.
 ```
 cat file | grep -B 2 -A 3 "pattern"
 ```
+  
 ###### Recursively change all occurences of a string in multiple files
 ```
 grep -r -l "get-dc-abbr" * | xargs sed -i 's/get-dc-abbr/my-site/g'
 ```
+
 ###### ffmpeg extract mp4 container audio without conversion
 ```
 ffmpeg -i video.mp4 -vn -acodec copy audio.aac
 ```
+
 ###### ffmpeg extract mp4 container audio with trimming
 ```
 ffmpeg -i video.mp4 -ss 00:01:02.500 -t 00:01:03.250 -vn -acodec copy audio.aac
 ```
+
 ###### pretty print json data 
 ```
 python3 -m json.tool pod-data.json
 ```
+
 ###### Quick HTTP Server
 ```
 python -m SimpleHTTPServer 8080
 python3 -m http.server 8080
 ```
+
 ###### Print OpenSSL Certificate
 ```
 openssl x509 -in personal.crt -noout -text 

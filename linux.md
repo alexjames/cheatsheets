@@ -72,6 +72,11 @@ cat fname | sort -t',' -k 2 -n -r
 cat fname | sort | uniq -c
 ```
 
+###### Join two lists based on first column
+```
+join <(sort f1) <(sort f2)
+```
+
 #### Process Management
 
 ###### List all running processes

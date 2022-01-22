@@ -18,3 +18,8 @@ Kill running container
 ```
 docker container kill <container id>
 ```
+
+Run bash in an image
+```
+docker run --rm -it --entrypoint bash <image name>
+```

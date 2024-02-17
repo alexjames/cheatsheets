@@ -194,6 +194,11 @@ ffmpeg -i video.mp4 -vn -acodec copy audio.aac
 ffmpeg -i video.mp4 -ss 00:01:02.500 -t 00:01:03.250 -vn -acodec copy audio.aac
 ```
 
+###### clip a video starting from time t1 for duration x without any re-encoding
+```
+ffmpeg.exe -ss t1 -i video.mp4 -t X -map 0 -c copy out.mp4
+```
+
 ###### pretty print json data 
 ```
 python3 -m json.tool pod-data.json

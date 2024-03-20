@@ -214,3 +214,13 @@ python3 -m http.server 8080
 ```
 openssl x509 -in personal.crt -noout -text 
 ```
+
+###### Print JSON doc by key
+```
+cat stuff.json | jq .KEYNAME
+```
+
+###### Print list in JSON doc
+```
+cat stuff.json | jq '.[]'
+```

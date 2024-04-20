@@ -224,3 +224,7 @@ cat stuff.json | jq .KEYNAME
 ```
 cat stuff.json | jq '.[]'
 ```
+###### Sum numbers in a list
+```
+echo "1 2 3 4 5" | tr ' ' '\n' | awk '{sum += $1} END {print sum}'
+```

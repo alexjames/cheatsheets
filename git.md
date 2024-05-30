@@ -18,3 +18,13 @@ git clone <repo URL>
 git format-patch -1 <sha>
 git am < file.patch
 ```
+
+###### List branches
+```
+git branch
+```
+
+###### List branches in order in which they were modified
+```
+git branch --sort=-committerdate
+```

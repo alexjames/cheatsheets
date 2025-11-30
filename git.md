@@ -28,3 +28,8 @@ git branch
 ```
 git branch --sort=-committerdate
 ```
+
+###### Top Contributors to a repo
+```
+git shortlog -s -n
+```

@@ -14,6 +14,11 @@ Check what containers are currently running
 docker container ls
 ```
 
+Look at logs of a docker container
+```
+docker logs <container_id>
+```
+
 Kill running container
 ```
 docker container kill <container_id>

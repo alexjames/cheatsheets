@@ -16,10 +16,15 @@ docker container ls
 
 Kill running container
 ```
-docker container kill <container id>
+docker container kill <container_id>
 ```
 
 Run bash in an image
 ```
 docker run --rm -it --entrypoint bash <image name>
+```
+
+Copy a file out of a docker container
+```
+docker cp <container id>:<file_path> .
 ```

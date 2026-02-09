@@ -14,7 +14,7 @@ Check what containers are currently running
 docker container ls
 ```
 
-Look at logs of a docker container
+Look at logs of a docker container (they are stored in `/var/lib/docker/containers`)
 ```
 docker logs <container_id>
 ```

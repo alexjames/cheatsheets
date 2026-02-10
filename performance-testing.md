@@ -20,3 +20,24 @@ export const options = {
 	duration: '10s'
 }
 ```
+##### 1000 users send continuous requests for 60 seconds
+Add:
+```
+export const options = {
+	vus: 1000,
+	duration: '60s'
+}
+```
+
+##### Load Test
+Testing how your application will behave under the average load your application receives.
+
+Test in multiple stages. Example - ramp upto 20 users for 20 seconds and then ramp down to 0 for the next 10.
+```
+export const options = {
+	stages: [
+		{ duration: '20s', target: 20 },
+		{ duration: '10s', target: 0 },
+	]
+}
+```

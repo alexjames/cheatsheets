@@ -1,5 +1,5 @@
-Performance testing using `k6`.
-##### Send single request 
+## Performance testing using `k6`.
+### Send single request 
 Write this function in `test.js`:
 ```
 import http from 'k6/http';
@@ -12,7 +12,7 @@ Run:
 ```
 k6 run test.js
 ```
-##### One user sends requests one after another for 10 seconds
+### One user sends requests one after another for 10 seconds
 Add:
 ```
 export const options = {
@@ -20,7 +20,7 @@ export const options = {
 	duration: '10s'
 }
 ```
-##### 1000 users send continuous requests for 60 seconds
+### 1000 users send continuous requests for 60 seconds
 Add:
 ```
 export const options = {
@@ -29,7 +29,7 @@ export const options = {
 }
 ```
 
-##### Load Test
+### Load Test
 Testing how your application will behave under the average load your application receives.
 
 Test in multiple stages. Example - ramp upto 20 users for 20 seconds and then ramp down to 0 for the next 10.

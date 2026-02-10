@@ -61,7 +61,7 @@ export const options = {
 }
 ```
 
-## Spike test
+### Spike test
 Testing system behavior under traffic spikes
 Ramp up to spike traffic and hold. Add:
 ```
@@ -73,7 +73,7 @@ export const options = {
 }
 ```
 
-## Soak test
+### Soak test
 Run system under load test/average load conditions for an extended period of time. Helps test that system continues to behave as expected under sustained load.
 ```
 export const options = {

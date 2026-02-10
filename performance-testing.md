@@ -12,3 +12,11 @@ Run:
 ```
 k6 run test.js
 ```
+##### One user sends requests one after another for 10 seconds
+Add:
+```
+export const options = {
+	vus: 1,
+	duration: '10s'
+}
+```

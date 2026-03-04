@@ -72,3 +72,51 @@ a[::2]
 a[1::2]
 ```
 
+Linked List Implementation
+
+```
+class ListNode:
+    def __init__(self, object):
+        self.val = object
+        self.next = None
+
+class LinkedList:
+    def __init__(self, object = None, head = None):
+        self.head = head
+
+    def addNode(self, object):
+        if self.head == None:
+            self.head = ListNode(object)
+            return
+        n = self.head
+        while n.next != None:
+            n = n.next
+        n.next = ListNode(object)
+
+    def addNodeAtPosition(self, object, pos):
+        if pos < 0:
+            raise Exception("nah!")
+
+        if pos == 0:
+            n = self.head
+            self.head = ListNode(object)
+            self.head.next= n
+            return
+        
+        n = self.head
+        while pos > 1:
+            if n == None:
+                raise Exception("nah!")
+            n = n.next
+            pos = pos - 1
+        c = n.next
+        n.next = ListNode(object)
+        n.next.next = c
+        
+
+    def traverse(self):
+        n = self.head
+        while n != None:
+            print(n.val)
+            n = n.next
+```

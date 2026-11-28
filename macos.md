@@ -7,3 +7,8 @@ opendiff file1 file2
 ```
 lsof -i :<portnumber>
 ```
+
+### Copying large number of files
+```
+rsync -avP Pictures  "/Users/alexjames/.mounty/My Passport/Pics/Pictures"
+```
